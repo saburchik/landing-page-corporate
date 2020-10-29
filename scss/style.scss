@@ -39,10 +39,9 @@ h6 {
     font-weight: 400;
     outline: none;
     border: none;
-    padding: 15px 60px;
+    padding: 15px 15px;
     border-radius: 3px;
     cursor: pointer;
-    -webkit-transition: .1s linear;
     transition: .1s linear;
 
     .header & {
@@ -54,11 +53,17 @@ h6 {
     }
 }
 
+.section__features,
+.section__browser,
+.section__registration {
+    padding-top: 100px;
+}
+
 // textual block
 .area__textual {
     width: 100%;
     max-width: 630px;
-    margin: 0 auto;
+    margin: 0 auto 50px;
     padding: 0 15px;
     display: flex;
     flex-direction: column;
@@ -66,6 +71,13 @@ h6 {
 
     .features &,
     .browser & {
+        display: block;
+        max-width: 700px;
+        text-align: center;
+    }
+
+    .registration & {
+        max-width: 100%;
         text-align: center;
     }
 
@@ -87,10 +99,14 @@ h6 {
         letter-spacing: 3px;
         margin: 0 0 40px 0;
         line-height: 55px;
-    }
 
-    span {
-        color: #ff6d6d;
+        span {
+            color: #ff6d6d;
+        }
+
+        .registration & {
+            color: #fff;
+        }
     }
 
     .area__text {
@@ -118,6 +134,7 @@ h6 {
 
         .features & {
             border: 0;
+            margin: 0 0 30px;
         }
     }
 
@@ -134,6 +151,7 @@ h6 {
 
         .features & {
             color: #333;
+            margin: 0 0 20px 0;
         }
     }
 
@@ -153,21 +171,24 @@ h6 {
         font-family: 'Exo', sans-serif;
         margin: 0 0 40px 0;
         letter-spacing: 1px;
+
+        .features & {
+            color: #6e6e6d;
+            font-style: normal;
+        }
     }
 }
 
-
-
-/* ========== section header ========== */
+/* _______ section header _______ */
 .section__header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     background: #ffffff url("../img/bg.jpg") no-repeat;
     background-position: center;
     background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     position: relative;
-    height: 800px;
 }
 
 .header {
@@ -189,7 +210,6 @@ h6 {
         color: #8387a5;
         font-size: 4rem;
         cursor: pointer;
-        -webkit-transition: .1s linear;
         transition: .1s linear;
         margin: 0 0 30px 0;
 
@@ -197,7 +217,6 @@ h6 {
         &:focus,
         &:active {
             color: #ff6d6d;
-            -webkit-transform: scale(1.1);
             transform: scale(1.1);
         }
     }
@@ -255,7 +274,7 @@ h6 {
     }
 }
 
-/* ========== section content ========== */
+/* _______ section content _______ */
 .section__content {
     background-color: #ECECEC;
 }
@@ -289,13 +308,12 @@ h6 {
     }
 }
 
-/* ================================================= block features =============================== */
+/* _______ section features _______ */
 .section__features {
     height: 765px;
     color: #fff;
     background: url("../img/features-bg.jpg") no-repeat;
     background-size: cover;
-    padding-top: 150px;
 }
 
 .features__wrapper {
@@ -304,7 +322,7 @@ h6 {
     text-align: center;
 }
 
-/* ======================================= block founder =============================== */
+/* _______ section founder _______ */
 .section__founder {
     position: relative;
 }
@@ -326,14 +344,14 @@ h6 {
     justify-content: center;
     align-items: center;
     position: relative;
+
+    .mac__img {
+        width: 55%;
+        margin: 0 10px 50px;
+    }
 }
 
-.mac__img {
-    width: 55%;
-    margin: 0 10px 50px;
-}
-
-/*=============  Block founder ============*/
+/* block founder */
 .block__founder {
     position: relative;
     background-color: #000;
@@ -358,11 +376,11 @@ h6 {
     text-align: center;
     justify-content: center;
     position: relative;
-}
 
-.founder__row {
-    width: 100%;
-    display: flex;
+    .founder__row {
+        width: 100%;
+        display: flex;
+    }
 }
 
 .partners {
@@ -375,53 +393,46 @@ h6 {
     -ms-flex-align: center;
     align-items: center;
     margin: 0 0 40px 0;
+
+    .partner__logo {
+        display: block;
+        width: 950px;
+        max-width: 100%;
+        height: auto;
+        padding: 0 15px;
+    }
 }
 
-.partner__logo {
-    padding: 0 15px;
-}
-
-.partner__logo {
-    display: block;
-    width: 950px;
-    max-width: 100%;
-    height: auto;
-}
-
-/* =========================== browser ===================== */
+/* _______ section browser _______ */
 .section__browser {
     background-color: #f6f5f3;
-    padding-top: 150px;
     position: relative;
     z-index: 3;
 }
 
 .browser {
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
     width: 100%;
     max-width: 850px;
     height: 750px;
     margin: 0 auto;
+
+    .browser__img {
+        width: 100%;
+        max-width: 890px;
+        margin: 0 auto;
+        padding: 0 20px;
+        position: absolute;
+        bottom: 0;
+    }
 }
 
-.browser__img {
-    width: 100%;
-    max-width: 890px;
-    margin: 0 auto;
-    padding: 0 20px;
-    position: absolute;
-    bottom: 0;
-}
-
-/* ====================== section registration ================= */
+/* _______ section registration _______ */
 .section__registration {
     width: 100%;
     height: 485px;
     background-color: #323969;
-    padding-top: 90px;
 }
 
 .registration {
@@ -429,30 +440,6 @@ h6 {
     max-width: 1140px;
     height: auto;
     margin: 0 auto;
-}
-
-.part__textual {
-    width: 100%;
-    text-align: center;
-}
-
-.part__suptitle {
-    color: #FF6D6D;
-    font-size: 16px;
-    font-weight: 400;
-    font-family: 'Exo', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    margin: 10px 0;
-}
-
-.part__title {
-    color: #ffffff;
-    font-size: 40px;
-    font-weight: 500;
-    font-family: 'Exo', sans-serif;
-    letter-spacing: 5px;
-    margin: 10px 0;
 }
 
 .part__registration {
@@ -473,17 +460,21 @@ h6 {
         border: none;
         border-radius: 3px;
     }
-}
 
-input {
-    color: #f6f5f3;
-    background-color: #474D78;
-    font-size: 14px;
-    font-weight: 400;
-    font-family: 'Exo', sans-serif;
+    input {
+        color: #f6f5f3;
+        background-color: #474D78;
+        font-size: 14px;
+        font-weight: 400;
+        font-family: 'Exo', sans-serif;
 
-    &:focus {
-        border: 2px solid #ff8a8a;
+        &:focus {
+            border: 2px solid #ff8a8a;
+        }
+    }
+
+    input::-webkit-input-placeholder {
+        color: #f6f5f3;
     }
 }
 
@@ -501,9 +492,7 @@ input {
     }
 }
 
-input::-webkit-input-placeholder {
-    color: #f6f5f3;
-}
+
 
 // This is PAGE TWO
 #results {
@@ -525,3 +514,5 @@ input::-webkit-input-placeholder {
 #results h1 a h2 {
     border: 2px solid #ff8a8a;
 }
+
+@import "_media.scss";

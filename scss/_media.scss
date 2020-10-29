@@ -5,10 +5,7 @@
     }
 
     .part__registration {
-        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
         justify-content: center;
     }
 
@@ -30,17 +27,20 @@
 }
 
 @media (max-width: 770px) {
+    .button {
+        .header & {
+            width: 35%;
+        }
+    }
 
     /* section header */
-    .section__header {
-        height: 568px;
+    .header {
+        .main__title {
+            font-size: 50px;
+        }
     }
 
-    .main__title {
-        font-size: 45px;
-    }
-
-    .lightbox__video {
+    ____________________________________ .lightbox__video {
         width: 400px;
         height: 200px;
     }
@@ -61,12 +61,7 @@
     }
 
     .features__wrapper {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
         flex-direction: column;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
         align-items: center;
     }
 
@@ -85,9 +80,6 @@
 
     .block__content {
         height: 770px;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
         flex-direction: column;
     }
 
@@ -100,12 +92,7 @@
     }
 
     .founder__row {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
         flex-direction: column;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
         align-items: center;
     }
 
@@ -114,10 +101,7 @@
     }
 
     .partners {
-        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
         justify-content: center;
     }
 
@@ -141,9 +125,6 @@
     }
 
     .part__registration {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
         flex-direction: column;
     }
 
@@ -154,11 +135,14 @@
 }
 
 @media (max-width: 470px) {
-
-    /* section header */
-    .section__header {
-        height: 654px;
+    .button {
+        .header & {
+            width: 60%;
+        }
     }
+
+    ____________________________________________
+    /* section header */
 
     .main__title {
         font-size: 35px;
