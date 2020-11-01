@@ -161,15 +161,31 @@
                 <div class="area__suptitle">New Features</div>
                 <div class="area__title">Over 1000 designers are using ... </div>
             </div>
-            <form action="/results" method="POST" class="part__registration"><input type="text" name="name" id="name"
-                    placeholder="FULL NAME" required><input type="email" name="email" id="email"
+            <form action="check.php" method="POST" class="part__registration"><input type="text" name="username"
+                    id="username" placeholder="FULL NAME" required><input type="email" name="email" id="email"
                     placeholder="YOUR EMAIL" required><input type="password" name="password" id="password"
-                    placeholder="PASSWORD" required><button type="submit" class="button">TRY NOW</button></form>
-            <div class="privacy">By Signing up you agree to our <a href="#">terms & Services</a>. </div>
+                    placeholder="PASSWORD" required><button type="submit" class="button">TRY NOW</button>
+            </form>
+            <div class="privacy">By Signing up you agree to our <a href="#lightbox_two">terms & Services</a>. </div>
+
+            <!-- lightbox video -->
+            <div id="lightbox_two">
+                <div class="lbox__images">
+                    <a href="#" class="button__close"> </a>
+                    <img class="lightbox__images"
+                        src="https://image.slidesharecdn.com/vfza3u8tjua52cszkcsh-signature-ea9b42fb304c342d09c271ea6fb96c012ffd30dd0e0751b2b5d5b931264ddb9a-poli-170107201258/95/google-terms-of-service-privacy-amp-terms-google-1-638.jpg?cb=1483823060"
+                        data-small="https://image.slidesharecdn.com/vfza3u8tjua52cszkcsh-signature-ea9b42fb304c342d09c271ea6fb96c012ffd30dd0e0751b2b5d5b931264ddb9a-poli-170107201258/85/google-terms-of-service-privacy-amp-terms-google-1-320.jpg?cb=1483823060"
+                        data-normal="https://image.slidesharecdn.com/vfza3u8tjua52cszkcsh-signature-ea9b42fb304c342d09c271ea6fb96c012ffd30dd0e0751b2b5d5b931264ddb9a-poli-170107201258/95/google-terms-of-service-privacy-amp-terms-google-1-638.jpg?cb=1483823060"
+                        data-full="https://image.slidesharecdn.com/vfza3u8tjua52cszkcsh-signature-ea9b42fb304c342d09c271ea6fb96c012ffd30dd0e0751b2b5d5b931264ddb9a-poli-170107201258/95/google-terms-of-service-privacy-amp-terms-google-1-1024.jpg?cb=1483823060"
+                        alt="Google Terms of Service
+                        Last modiﬁed: April 14, 2014 (view archived versions)
+                        Welcome to Google!
+                        Thanks for using our prod...">
+                </div>
+            </div>
         </div>
     </section>
     <section class="section__footer">
-
         <div class="container">
             <div class="images"></div>
             <div class="footer">
@@ -203,24 +219,24 @@
                     </div>
                     <div class="footer__letter">
                         <div class="footer__title">Get Newsletter</div>
-                        <form class="footer__email" action="">
-                            <input type="text" placeholder="EMAIL">
-                            <button>
+                        <form action="email_sub.php" method="POST" class="footer__email">
+                            <input type="email" name="email" id="email" placeholder="EMAIL">
+                            <button type="submit">
                                 <i class="far fa-paper-plane"></i>
                             </button>
                         </form>
                         <div class="socials">
-                            <a href=""><i class="fas fa-basketball-ball"></i></a>
-                            <a href=""><i class="fab fa-facebook-f"></i></a>
-                            <a href=""><i class="fab fa-google-plus-g"></i></a>
-                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href="https://dribbble.com/"><i class="fas fa-basketball-ball"></i></a>
+                            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.google.com/"><i class="fab fa-google-plus-g"></i></a>
+                            <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
     </section>
+
 </body>
 
 </html>

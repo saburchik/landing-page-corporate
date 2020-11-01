@@ -3,34 +3,99 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@400;500&display=swap" rel="stylesheet">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@100;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/style.css">
-    <title>Registration</title>
+    <title>Corporate</title>
 </head>
 
 <body>
 
     <section class="section__registration">
         <div class="registration">
-            <div class="part__textual">
-                <div class="part__suptitle">New Features</div>
-                <div class="part__title">Over 1000 designers are using ...</div>
+            <div class="area__textual">
+                <div class="area__suptitle">New Features</div>
+                <div class="area__title">Over 1000 designers are using ... </div>
             </div>
-            <div>
-                <h1>Успешно!</h1>
-                <a href="/">
-                    <h2>Вернутся на главную</h2>
-                </a>
+
+            <div class="confirm__block">
+                <h1>Success!</h1>
+                <a href="/">Back to website</a>
             </div>
-            <div class="privacy">
-                By Signing up you agree to our
-                <a href="#">terms & Services</a>.
+
+            <div class="privacy">By Signing up you agree to our <a href="#lightbox_two">terms & Services</a>. </div>
+            <!-- lightbox video -->
+            <div id="lightbox_two">
+                <div class="lbox__images">
+                    <a href="#" class="button__close"> </a>
+                    <img class="lightbox__images"
+                        src="https://image.slidesharecdn.com/vfza3u8tjua52cszkcsh-signature-ea9b42fb304c342d09c271ea6fb96c012ffd30dd0e0751b2b5d5b931264ddb9a-poli-170107201258/95/google-terms-of-service-privacy-amp-terms-google-1-638.jpg?cb=1483823060"
+                        data-small="https://image.slidesharecdn.com/vfza3u8tjua52cszkcsh-signature-ea9b42fb304c342d09c271ea6fb96c012ffd30dd0e0751b2b5d5b931264ddb9a-poli-170107201258/85/google-terms-of-service-privacy-amp-terms-google-1-320.jpg?cb=1483823060"
+                        data-normal="https://image.slidesharecdn.com/vfza3u8tjua52cszkcsh-signature-ea9b42fb304c342d09c271ea6fb96c012ffd30dd0e0751b2b5d5b931264ddb9a-poli-170107201258/95/google-terms-of-service-privacy-amp-terms-google-1-638.jpg?cb=1483823060"
+                        data-full="https://image.slidesharecdn.com/vfza3u8tjua52cszkcsh-signature-ea9b42fb304c342d09c271ea6fb96c012ffd30dd0e0751b2b5d5b931264ddb9a-poli-170107201258/95/google-terms-of-service-privacy-amp-terms-google-1-1024.jpg?cb=1483823060"
+                        alt="Google Terms of Service
+                        Last modiﬁed: April 14, 2014 (view archived versions)
+                        Welcome to Google!
+                        Thanks for using our prod...">
+                </div>
             </div>
         </div>
     </section>
 
-    <script src="js/script.js"></script>
+    <section class="section__footer">
+        <div class="container">
+            <div class="images"></div>
+            <div class="footer">
+                <div class="footer__row">
+                    <div class="footer__address">
+                        <div class="footer__icon">
+                            <div class="icon__start">Start</div>
+                            <img src="img/Polygon%201.png" alt="">
+                        </div>
+                        <div class="address__text">
+                            Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam.
+                            USA & CAN: 1-888-123-4567
+                            Address: 34 Brokel Rd. NY
+                        </div>
+                    </div>
+                    <div class="footer__support">
+                        <div class="footer__title">Support</div>
+                        <div class="footer__item">
+                            <a class="footer__link" href="">Help Center</a>
+                            <a class="footer__link" href="">Get Started</a>
+                            <a class="footer__link" href="">Contact US</a>
+                        </div>
+                    </div>
+                    <div class="footer__about">
+                        <div class="footer__title">About US</div>
+                        <div class="footer__item">
+                            <a class="footer__link" href="">About Us</a>
+                            <a class="footer__link" href="">Terms of Use</a>
+                            <a class="footer__link" href="">Privacy PolicyS</a>
+                        </div>
+                    </div>
+                    <div class="footer__letter">
+                        <div class="footer__title">Get Newsletter</div>
+                        <form action="email_sub.php" method="POST" class="footer__email">
+                            <input type="email" name="email" id="email" placeholder="EMAIL">
+                            <button type="submit">
+                                <i class="far fa-paper-plane"></i>
+                            </button>
+                        </form>
+                        <div class="socials">
+                            <a href="https://dribbble.com/"><i class="fas fa-basketball-ball"></i></a>
+                            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.google.com/"><i class="fab fa-google-plus-g"></i></a>
+                            <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </body>
 
 </html>

@@ -487,6 +487,58 @@ h6 {
     }
 }
 
+// two
+#lightbox_two {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    &:target {
+        display: flex;
+    }
+}
+
+.lbox__images {
+    position: relative;
+
+    .lightbox__images {
+        width: 500px;
+        height: 100vh;
+    }
+
+    .button__close {
+        position: absolute;
+        right: -1em;
+        width: 2em;
+        height: 2em;
+        cursor: pointer;
+        color: #333333;
+        background-color: #ff6d6d;
+        border-radius: 50%;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &::after {
+            content: 'X';
+            color: #ffffff;
+            font-weight: 700;
+        }
+
+        &:hover {
+            background-color: #c05454;
+        }
+    }
+}
+
 /* _______ section footer _______ */
 .section__footer {
     width: 100%;
@@ -515,7 +567,7 @@ h6 {
 .footer__row {
     display: flex;
     flex-wrap: wrap;
-    padding: 85px 0;
+    padding: 50px 0;
 }
 
 .footer__address,
@@ -657,24 +709,26 @@ h6 {
 
 
 // This is PAGE TWO
-#results {
-    width: 100%;
+.confirm__block {
+    display: block;
+    justify-content: center;
     text-align: center;
-}
+    padding: 50px 0;
 
-#results h1 {
-    color: #ff8a8a;
-    font-weight: 400;
-    font-family: 'Exo', sans-serif;
-}
+    h1 {
+        color: #ff8a8a;
+        font-weight: 400;
+        font-family: 'Exo', sans-serif;
+        margin-bottom: 30px;
+    }
 
-#results h1 a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-#results h1 a h2 {
-    border: 2px solid #ff8a8a;
+    a {
+        font-size: 22px;
+        color: #ffffff;
+        text-decoration: none;
+        border: 2px solid #ff8a8a;
+        padding: 15px;
+    }
 }
 
 @import "_media.scss";
