@@ -296,6 +296,16 @@ h6 {
   background-color: #c05454;
 }
 
+.disable-scroll {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
 /* _______ section content _______ */
 .section__content {
   background-color: #ECECEC;
