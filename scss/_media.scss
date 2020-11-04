@@ -1,5 +1,6 @@
 /* ======= media ======= */
 @media (max-width: 1100px) {
+
     .section__registration {
         height: auto;
     }
@@ -34,6 +35,11 @@
         .mac__img {
             width: 45%;
         }
+    }
+
+    // lightbox
+    .fancybox-slide--iframe .fancybox-content {
+        max-height: 40%;
     }
 
     // section founder
@@ -88,14 +94,6 @@
     .header {
         .main__title {
             font-size: 50px;
-        }
-    }
-
-    // lightbox
-    .video {
-        .lightbox__video {
-            width: 400px;
-            height: 200px;
         }
     }
 
@@ -258,16 +256,8 @@
     }
 
     // lightbox
-    .video {
-        .lightbox__video {
-            width: 300px;
-            height: 200px;
-        }
-
-        .button__close {
-            top: -1em;
-            right: 0;
-        }
+    .fancybox-slide--iframe .fancybox-content {
+        max-width: 90%;
     }
 
     // section features

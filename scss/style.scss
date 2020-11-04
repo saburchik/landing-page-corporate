@@ -21,6 +21,15 @@ h6 {
     margin: 0;
 }
 
+// lightbox
+.fancybox-slide--iframe .fancybox-content {
+    width: 700px;
+    height: 500px;
+    max-width: 75%;
+    max-height: 60%;
+    margin: 0;
+}
+
 // General Setting
 
 .container {
@@ -220,68 +229,6 @@ h6 {
             transform: scale(1.1);
         }
     }
-}
-
-/* lightbox video */
-#lightbox {
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    background: rgba(0, 0, 0, 0.7);
-    display: none;
-    justify-content: center;
-    align-items: center;
-
-    &:target {
-        display: flex;
-    }
-}
-
-.video {
-    position: relative;
-
-    .lightbox__video {
-        width: 560px;
-        height: 315px;
-    }
-
-    .button__close {
-        position: absolute;
-        right: -1em;
-        width: 2em;
-        height: 2em;
-        cursor: pointer;
-        color: #333333;
-        background-color: #ff6d6d;
-        border-radius: 50%;
-        text-decoration: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        &::after {
-            content: 'X';
-            color: #ffffff;
-            font-weight: 700;
-        }
-
-        &:hover {
-            background-color: #c05454;
-        }
-    }
-}
-
-.disable-scroll {
-    position: relative;
-    overflow: hidden;
-    height: 100vh;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
 }
 
 /* _______ section content _______ */
@@ -494,58 +441,6 @@ h6 {
 
     a {
         color: #A6AABC;
-    }
-}
-
-// two
-#lightbox_two {
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    background: rgba(0, 0, 0, 0.7);
-    display: none;
-    justify-content: center;
-    align-items: center;
-
-    &:target {
-        display: flex;
-    }
-}
-
-.lbox__images {
-    position: relative;
-
-    .lightbox__images {
-        width: 500px;
-        height: 100vh;
-    }
-
-    .button__close {
-        position: absolute;
-        right: -1em;
-        width: 2em;
-        height: 2em;
-        cursor: pointer;
-        color: #333333;
-        background-color: #ff6d6d;
-        border-radius: 50%;
-        text-decoration: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        &::after {
-            content: 'X';
-            color: #ffffff;
-            font-weight: 700;
-        }
-
-        &:hover {
-            background-color: #c05454;
-        }
     }
 }
 

@@ -20,7 +20,7 @@ if(mb_strlen($username) < 3 || mb_strlen($username) > 50) {
 
 $password = md5($password."mfijnwej3494fnif34f");
 
-$mysql = new mysqli('','','','');
+$mysql = new mysqli('','','','corporate');
 $mysql->query("INSERT INTO `clients` (`username`, `email`, `password`)
 VALUE('$username', '$email', '$password')");
 

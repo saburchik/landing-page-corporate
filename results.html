@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/style.css">
-    <title>Corporate</title>
+    <link rel="stylesheet" href="plugins/fancybox-master/dist/jquery.fancybox.css" type="text/css">
+    <title>Success!</title>
 </head>
 
 <body>
@@ -25,11 +26,11 @@
                 <a href="/">Back to website</a>
             </div>
 
-            <div class="privacy">By Signing up you agree to our <a href="#lightbox_two">terms & Services</a>. </div>
-            <!-- lightbox video -->
-            <div id="lightbox_two">
-                <div class="lbox__images">
-                    <a href="#" class="button__close"> </a>
+            <div class="privacy">By Signing up you agree to our
+                <a data-fancybox data-src="#modal" href="javascript:;" class="btn btn-primary">
+                    terms & Services
+                </a>.
+                <div style="display: none;" id="modal">
                     <img class="lightbox__images"
                         src="https://image.slidesharecdn.com/vfza3u8tjua52cszkcsh-signature-ea9b42fb304c342d09c271ea6fb96c012ffd30dd0e0751b2b5d5b931264ddb9a-poli-170107201258/95/google-terms-of-service-privacy-amp-terms-google-1-638.jpg?cb=1483823060"
                         data-small="https://image.slidesharecdn.com/vfza3u8tjua52cszkcsh-signature-ea9b42fb304c342d09c271ea6fb96c012ffd30dd0e0751b2b5d5b931264ddb9a-poli-170107201258/85/google-terms-of-service-privacy-amp-terms-google-1-320.jpg?cb=1483823060"
@@ -95,6 +96,10 @@
             </div>
         </div>
     </section>
+
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="plugins/fancybox-master/dist/jquery.fancybox.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 

@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,6 +12,7 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="plugins/fancybox-master/dist/jquery.fancybox.css" type="text/css">
     <title>Corporate</title>
 </head>
 
@@ -15,16 +20,12 @@
     <section class="section__header">
         <div class="container">
             <div class="header">
-                <h1 class="main__title">There is no other platforms for you as like</h1><a id="" href="#lightbox"><i
-                        class="header__icon far fa-play-circle"></i></a>
+                <h1 class="main__title">There is no other platforms for you as like</h1>
+                <a data-fancybox data-type="iframe" data-src="https://www.youtube.com/embed/IXVmc4WITck"
+                    href="https://www.youtube.com/embed/IXVmc4WITck" class="lightbox__video" width="500px">
+                    <i class="header__icon far fa-play-circle"></i>
+                </a>
                 <div><button href="" id="js-btn" class="button">TRY NOW</button></div>
-            </div>
-            <!-- lightbox video -->
-            <div id="lightbox">
-                <div class="video"><a href="/" class="button__close"></a><iframe class="lightbox__video"
-                        src="https://www.youtube.com/embed/IXVmc4WITck" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe></div>
             </div>
         </div>
     </section>
@@ -161,21 +162,24 @@
                 <div class="area__suptitle">New Features</div>
                 <div class="area__title">Over 1000 designers are using ... </div>
             </div>
-            <form action="check.php" method="POST" class="part__registration"><input type="text" name="username"
+            <p class="msg__form" style="text-align: center; color: aquamarine;">
+                <?php
+                    if ($_SESSION['message']) {
+                        echo '<p class="msg>' . $_SESSION['message'] . '</p>';
+                    }
+                    unset($_SESSION['message']);
+                ?>
+            </p>
+            <form action="php/send.php" method="POST" class="part__registration"><input type="text" name="username"
                     id="username" placeholder="FULL NAME" required><input type="email" name="email" id="email"
                     placeholder="YOUR EMAIL" required><input type="password" name="password" id="password"
                     placeholder="PASSWORD" required><button type="submit" class="button">TRY NOW</button>
             </form>
-            <div class="privacy">By Signing up you agree to our <a id="scroll-off" href="">terms
-                    &
-                    Services</a>. </div>
-
-
-
-            <!-- lightbox video -->
-            <!-- <div id="lightbox_two">
-                <div class="lbox__images">
-                    <a href="" id="" class="button__close"> </a>
+            <div class="privacy">By Signing up you agree to our
+                <a data-fancybox data-src="#modal" href="javascript:;" class="btn btn-primary">
+                    terms & Services
+                </a>.
+                <div style="display: none;" id="modal">
                     <img class="lightbox__images"
                         src="https://image.slidesharecdn.com/vfza3u8tjua52cszkcsh-signature-ea9b42fb304c342d09c271ea6fb96c012ffd30dd0e0751b2b5d5b931264ddb9a-poli-170107201258/95/google-terms-of-service-privacy-amp-terms-google-1-638.jpg?cb=1483823060"
                         data-small="https://image.slidesharecdn.com/vfza3u8tjua52cszkcsh-signature-ea9b42fb304c342d09c271ea6fb96c012ffd30dd0e0751b2b5d5b931264ddb9a-poli-170107201258/85/google-terms-of-service-privacy-amp-terms-google-1-320.jpg?cb=1483823060"
@@ -186,7 +190,7 @@
                         Welcome to Google!
                         Thanks for using our prod...">
                 </div>
-            </div> -->
+            </div>
         </div>
     </section>
     <section class="section__footer">
@@ -242,6 +246,7 @@
     </section>
 
     <script src="js/jquery-3.5.1.js"></script>
+    <script src="plugins/fancybox-master/dist/jquery.fancybox.js"></script>
     <script src="js/script.js"></script>
 
 
